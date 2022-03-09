@@ -1,0 +1,14 @@
+<html>
+    <head>
+        <title>{{title}} - My order list</title>
+    </head>
+    
+    <body>
+        <h1>Our order list</h1>
+        {% for order in orders %}
+            <div>
+                <p>{{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, {{order.scooter_name}}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
