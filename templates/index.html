@@ -7,7 +7,7 @@
         <h1>Our order list</h1>
         {% for order in orders %}
             <div>
-                <p>{{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, {{order.scooter_name}}</p>
+                <p>{{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, {{order.scooter_name}}, <a href ="http://localhost:5000//orders/{{orders.index(order)}}" >j</a></p>
             </div>
         {% endfor %}
     </body>
