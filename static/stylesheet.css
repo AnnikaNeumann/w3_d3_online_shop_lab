@@ -9,7 +9,7 @@ body{
     font-weight: 200;
 }
 
-body > ul > li{
+body > div > ul > li{
     list-style-type: none;
 }
 

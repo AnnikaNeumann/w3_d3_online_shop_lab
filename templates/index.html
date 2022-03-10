@@ -11,14 +11,14 @@
         <h1>Our order list</h1>
         {% for order in orders %}
             <div><ul><li>
-                <p>{{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, {{order.scooter_name}}, <a href ="http://localhost:5000//orders/{{orders.index(order)}}" >Click here for your order</a></p>
+                <p>{{order.customer_name}} {{order.order_date}} {{order.quantity}} {{order.scooter_name}}, <a href ="http://localhost:5000//orders/{{orders.index(order)}}" >Click here for your order</a></p>
             </li></ul>
             </div>
         {% endfor %}
             <main>
-                <img src= "/static/images/honda.png" alt="Honda Scooter" height="500" width="600">
-                <img src= "/static/images/piaggio.png" alt="Piaggio Scooter" height="500" width="600">
-                <img src="/static/images/vespa.png" alt="Vespa Scooter" height="500" width="600">
+                <img src= "/static/images/honda.png" alt="Honda Scooter" height="400" width="500">
+                <img src= "/static/images/piaggio.png" alt="Piaggio Scooter" height="400" width="500">
+                <img src="/static/images/vespa.png" alt="Vespa Scooter" height="400" width="500">
             </main>
             
         <footer>
