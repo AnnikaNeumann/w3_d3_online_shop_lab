@@ -10,3 +10,4 @@ def index():
 def get_order(index):
     order = orders[int(index)]
     return render_template("order.html", title = index , order = order)
+

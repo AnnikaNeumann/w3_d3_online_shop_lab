@@ -1,14 +1,28 @@
+
+
 <html>
     <head>
         <title>{{title}} - My order list</title>
+        <link rel="stylesheet" href="{{ url_for('.static', filename='stylesheet.css')}}">
+        <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
     </head>
     
     <body>
         <h1>Our order list</h1>
         {% for order in orders %}
-            <div>
-                <p>{{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, {{order.scooter_name}}, <a href ="http://localhost:5000//orders/{{orders.index(order)}}" >j</a></p>
+            <div><ul><li>
+                <p>{{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, {{order.scooter_name}}, <a href ="http://localhost:5000//orders/{{orders.index(order)}}" >Click here for your order</a></p>
+            </li></ul>
             </div>
         {% endfor %}
+            <main>
+                <img src= "/static/images/honda.png" alt="Honda Scooter" height="500" width="600">
+                <img src= "/static/images/piaggio.png" alt="Piaggio Scooter" height="500" width="600">
+                <img src="/static/images/vespa.png" alt="Vespa Scooter" height="500" width="600">
+            </main>
+            
+        <footer>
+            <p>Coolest Scooter Online Shop of Scotland</p><p>Contact us today for the best offer</p>
+        </footer>
     </body>
 </html>
